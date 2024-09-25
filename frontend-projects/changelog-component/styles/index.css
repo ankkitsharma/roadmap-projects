@@ -1,0 +1,61 @@
+body {
+  border: 0.15rem solid black;
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  min-height: calc(100vh - 2rem);
+}
+
+/* header */
+
+header {
+  text-align: center;
+}
+
+.heading_text {
+  color: gray;
+}
+
+/* main */
+
+.clog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clog_item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clog_left {
+  border-right: 0.3rem solid black;
+  position: relative;
+  padding-right: 20px;
+}
+
+.clog_left::after {
+  position: absolute;
+  content: ".";
+  bottom: -0.7rem;
+  right: -0.7rem;
+  font-size: 5rem;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.visit_changelog {
+  background-color: rgb(26, 25, 25);
+  color: white;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
