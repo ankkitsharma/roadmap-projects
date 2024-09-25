@@ -1,0 +1,225 @@
+body {
+  border: 0.3rem solid rgb(0, 0, 0);
+  text-align: center;
+  margin: 1rem;
+  min-height: calc(100vh - 2rem);
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+header,
+main {
+  border-bottom: 0.2rem solid black;
+}
+
+main > div {
+  border-bottom: 0.15rem solid black;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+
+.navbar > nav > a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo > img {
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+}
+
+.your_name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.your_title > h1 {
+  margin-bottom: 0rem;
+}
+
+.your_title > p {
+  margin-top: 0.3rem;
+  color: gray;
+}
+
+/* main */
+
+.projects > ul > li:not(:last-child) {
+  border-bottom: 0.15rem solid black;
+}
+
+.projects *:not(h2) {
+  background-color: rgb(216, 216, 216);
+}
+
+.projects > h2 {
+  margin: 0;
+  padding: 0.6rem;
+  border-bottom: 0.15rem solid black;
+}
+
+.projects > ul {
+  list-style-type: none;
+  padding: unset;
+  margin: unset;
+}
+
+.projects > ul > li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.workex > *:not(:last-child) {
+  border-bottom: 0.15rem solid black;
+}
+
+.workex h2 {
+  margin: 0;
+  padding: 0.6rem;
+}
+
+.workex h3 {
+  margin: 0;
+}
+
+.workex > div {
+  padding: 1rem;
+  text-align: left;
+}
+.workex > *:not(h2) {
+  background-color: rgb(216, 216, 216);
+}
+
+.workex a {
+  text-decoration: unset;
+}
+
+.edu {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.edu *:not(h2) {
+  text-align: left;
+}
+
+.dash {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dash > li {
+  margin: 0;
+  padding: 0;
+}
+.dash > li:before {
+  content: "- ";
+}
+
+/* footer */
+
+footer figure {
+  border: 0.15rem solid black;
+  border-radius: 2rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+blockquote {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+footer figcaption {
+  color: rgb(158, 158, 158);
+  padding-left: 1.5rem;
+}
+
+footer cite {
+  display: block;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  /* header */
+  .logo {
+    flex-direction: row;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* main */
+
+  main {
+    display: flex;
+  }
+
+  main > div {
+    flex: 1;
+  }
+
+  .projects *:not(h2) {
+    background-color: inherit;
+  }
+
+  .projects > h2 {
+    border-bottom: 0rem;
+  }
+
+  main > *:not(:last-child) {
+    border-right: 0.15rem solid black;
+  }
+
+  .workex > h2 {
+    border-bottom: 0rem !important;
+  }
+
+  .workex > *:not(h2) {
+    background-color: inherit;
+  }
+
+  /* footer */
+
+  .reviews {
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .reviews > figure {
+    /* padding: 0; */
+    margin: 0;
+    height: 12rem;
+  }
+
+  .copyright {
+    padding-top: 3rem;
+  }
+}
